@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=4 uid="uid://bojcyax5ciokk"]
+[gd_scene load_steps=10 format=4 uid="uid://bojcyax5ciokk"]
 
 [ext_resource type="PackedScene" uid="uid://dmhqbf24rqvkd" path="res://Scenes/Player.tscn" id="1_ebmjs"]
 [ext_resource type="Texture2D" uid="uid://doscxaydx26cq" path="res://Scenes/world_tileset.png" id="2_qxrlw"]
 [ext_resource type="PackedScene" uid="uid://kmeegcok8t8e" path="res://Scenes/Platform_green.tscn" id="3_wrm1d"]
+[ext_resource type="PackedScene" uid="uid://cphnwxgjueg4j" path="res://Scenes/Coin.tscn" id="4_3dryh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wrm1d"]
 texture = ExtResource("2_qxrlw")
@@ -214,7 +215,7 @@ tile_set = SubResource("TileSet_3dryh")
 [node name="Player" parent="." instance=ExtResource("1_ebmjs")]
 
 [node name="Camera P1" type="Camera2D" parent="Player"]
-zoom = Vector2(4, 4)
+zoom = Vector2(3.5, 3.5)
 
 [node name="Platform" parent="." instance=ExtResource("3_wrm1d")]
 position = Vector2(1, -40)
@@ -227,3 +228,30 @@ libraries = {
 &"": SubResource("AnimationLibrary_wowpa")
 }
 autoplay = "Move"
+
+[node name="Coin" parent="Platform2" instance=ExtResource("4_3dryh")]
+position = Vector2(0, -15)
+
+[node name="Coin" parent="." instance=ExtResource("4_3dryh")]
+position = Vector2(71, -29)
+
+[node name="Coin2" parent="." instance=ExtResource("4_3dryh")]
+position = Vector2(104, -41)
+
+[node name="Coin3" parent="." instance=ExtResource("4_3dryh")]
+position = Vector2(440, -16)
+
+[node name="Coin4" parent="." instance=ExtResource("4_3dryh")]
+position = Vector2(456, -16)
+
+[node name="Coin5" parent="." instance=ExtResource("4_3dryh")]
+position = Vector2(472, -16)
+
+[node name="Coin6" parent="." instance=ExtResource("4_3dryh")]
+position = Vector2(339, -37)
+
+[node name="Coin7" parent="." instance=ExtResource("4_3dryh")]
+position = Vector2(355, -37)
+
+[node name="Coin8" parent="." instance=ExtResource("4_3dryh")]
+position = Vector2(371, -37)
