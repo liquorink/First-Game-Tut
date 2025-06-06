@@ -352,10 +352,10 @@ unique_name_in_owner = true
 script = ExtResource("1_v158k")
 
 [node name="ScoreLabel" type="Label" parent="GameManager"]
-offset_left = 89.0
-offset_top = -126.0
-offset_right = 261.0
-offset_bottom = -103.0
+offset_left = 939.0
+offset_top = -62.0
+offset_right = 1111.0
+offset_bottom = -39.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_1l0tm")
 theme_override_font_sizes/font_size = 8
